@@ -7,7 +7,7 @@ import './style/css/reset.css';
 
 function App() {
   return (
-    <Container>
+    <Container className='ts'>
       <SignIn/>
     </Container>
   );
