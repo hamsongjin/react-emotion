@@ -20,7 +20,7 @@ function SignIn() {
                             </div>
                         </div>
                         {/* //id, pw */}
-                        <button type='button'>로그인</button>
+                        <button type='button'>로그인btn</button>
                         {/* user info// */}
                         <div className='user_info'>
 
