@@ -1,3 +1,14 @@
+@import "variable";
+
+.w_wrap {
+    width: 100vw;
+    max-width: 770px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 .container {
-    width: 800px;
+    &.signin{
+        height: 100vh;
+        background: $main;
+    }   
 }

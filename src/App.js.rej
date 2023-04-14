@@ -1,0 +1,6 @@
+diff a/src/App.js b/src/App.js	(rejected hunks)
+@@ -0,3 +0,4 @@
+   );
+ }
+ 
++export default App;

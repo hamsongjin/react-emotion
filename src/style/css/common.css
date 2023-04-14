@@ -1,3 +1,16 @@
-.container {
-  width: 800px;
+/* color */
+/* body */
+/* text */
+/* text style */
+/* header */
+.w_wrap {
+  width: 100vw;
+  max-width: 770px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container.signin {
+  height: 100vh;
+  background: #f3cb27;
 }/*# sourceMappingURL=common.css.map */
