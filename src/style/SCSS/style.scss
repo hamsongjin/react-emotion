@@ -14,13 +14,29 @@ h4.title_h4 {font-size: 1.125rem; font-family: $H-title;}
 .d_ib { display:inline-block!important; }
 .d_f { display:flex!important; }
 .d_if { display:inline-flex!important; }
+.ds_sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /** position **/
 .pos_r { position:relative!important; }
 .pos_a { position:absolute!important; }
 .pos_f { position:fixed!important; }
 .pos_c { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); }
-
+.pos_t {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pos_b {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
 /** flex **/
 .fd_r { flex-direction:row!important; }
@@ -144,4 +160,16 @@ $i : 900;
 .to_e2 { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden; }
 .to_e3 { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden; }
 
+/* color */
+.err {color: $error}
+.new {color: $new}
+.colr_main {color: $main}
+.colr_sub {color:$sub}
+.colr_red {color: $red}
+.colr_blue {color:$blue}
+.bg_white {background-color: #fff;}
 
+/* border */
+.bd_b {
+    border-bottom: 1px solid $gray400;
+}

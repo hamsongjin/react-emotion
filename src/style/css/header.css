@@ -1,0 +1,19 @@
+/* color */
+/* body */
+/* text */
+/* text style */
+/* header */
+header {
+  width: 100%;
+  height: 50px;
+  line-height: 48px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .title_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=header.css.map */

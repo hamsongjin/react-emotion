@@ -1,5 +1,7 @@
 @import "variable";
-
+body {
+    background: $gray100;
+}
 .w_wrap {
     width: 100vw;
     max-width: 770px;
@@ -7,8 +9,87 @@
     margin: 0 auto;
 }
 .container {
+    margin-top: $header-height;
     &.signin{
         height: 100vh;
         background: $main;
     }   
+}
+.input {
+    input {
+        width: 100%;
+        &:not([type="checkbox"],[type="radio"]) {
+            padding: 16px;
+            border-bottom: 1px solid $gray200;
+        }
+        &::placeholder {
+            color: $gray200;
+        }
+    }
+}
+button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #fff;
+    background: $sub;
+    &.long_btn {
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+}
+.btn_wrap {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.calendar_wrap {
+    // padding: 12px 10px 25px;
+    // border-radius: 10px;
+    // background: $main;
+    .calendar_head {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .item {
+        .day {
+            text-align: center;
+            padding: 15px 0;
+            &.today {
+                color: #fff;
+                position :relative
+            }
+            &.today::before {
+                content: "";
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: $sub;
+                
+                position: absolute;
+                top: 49%;
+                left: 50%;
+                transform:translate(-50%, -50%);
+                z-index: -1;
+            }
+            &.active {position: relative;}
+            &.active::after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $main;
+
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+           
+        }
+    }
+    
 }

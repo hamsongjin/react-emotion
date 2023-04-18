@@ -6,9 +6,15 @@
 .signin {
   position: relative;
 }
-.signin .panerl_wrap {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.signin .panel_wrap {
+  height: 70vh;
+  padding: 50px 30px;
+  border-top-left-radius: 80px;
+  background: #fff;
+}
+.signin .panel_wrap h1.title_h1 {
+  color: #ff6633;
+}
+.signin .panel_wrap .user_info {
+  color: #9e9e9e;
 }/*# sourceMappingURL=signIn.css.map */
